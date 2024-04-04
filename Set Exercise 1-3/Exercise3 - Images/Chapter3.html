@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Aurora Borealis</title>
+      
+    <style>
+      @font-face {
+        font-family: rus;
+        src: url('Rhythmic_RUS.otf');
+      }
+      @font-face {
+        font-family: nl;
+        src: url("NorthernLights-Script.ttf");
+      }
+
+      body, html {
+        height: 100%;
+        margin: 0;
+      }
+
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: filter 0.5s ease;
+      }
+
+      .bgimg-1 {
+        background-image: url("1.jpg");
+        min-height: 100%;
+      }
+      .bgimg-1:hover {
+        filter: hue-rotate(90deg);
+        transition: filter 0.5s ease;
+      }
+
+      .bgimg-2 {
+        background-image: url("2.jpg");
+        height: 100%;
+      }
+      .bgimg-2:hover {
+        filter: invert(100%);
+        transition: filter 0.5s ease;
+      }
+
+      .bgimg-3 {
+        background-image: url("3.jpg");
+        height: 100%;
+      }
+      .bgimg-3:hover {
+        filter: sepia(100%);
+        transition: filter 0.5s ease;
+      }
+
+      .caption {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        width: 100%;
+        font-size: 500%;
+        text-align: center;
+        color: transparent;
+        transition: color 0.5s ease; /* Smooth transition for text color */
+        text-transform: uppercase;
+      }
+
+      .bgimg-1:hover .caption,
+      .bgimg-2:hover .caption,
+      .bgimg-3:hover .caption {
+        color: #000; /* Change text color on hover */
+        transition: color 0.5s ease;
+      }
+
+      .description {
+        color: #397358;
+        background-color: black;
+        padding: 10px 20px; /* Adjust padding as needed */
+        text-align: justify;
+      }
+
+      h1 {
+        text-shadow: 2px 2px 4px rgba(57, 115, 88, 0.7);
+        font-family: rus;
+        letter-spacing: 8px;
+        font-size: 55px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 0; /* Remove top margin */
+        margin-bottom: 10px; /* Add bottom margin */
+      }
+
+      p {
+        text-align: center;
+        margin-top: 0; /* Remove top margin */
+        margin-bottom: 0; /* Remove bottom margin */
+      }
+
+      p1 {
+        font-family: rus;
+        letter-spacing: 5px;
+      }
+
+      h2 {
+        text-align:center;
+      }
+      a{
+        color: inherit; /* uses the default text color */
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="description">
+      <h1>aurora borealis</h1>
+      <p>hover the images for their filter</p>
+    </div>
+
+
+    <div class="bgimg-1">
+      <div class="caption">
+        <p1>hue-rotate(90-deg)</p1>
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Copyright &copy; 2016 by <a href="https://unsplash.com/photos/aurora-borealis-Ovn1hyBge38">v2osk</a></h2>
+    </div>
+
+
+    <div class="bgimg-2">
+      <div class="caption">
+        <p1>invert(100%)</p1>
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Copyright &copy; 2017 by <a href="https://unsplash.com/photos/silhouette-of-trees-near-aurora-borealis-at-night-62V7ntlKgL8">Vincent Guth</a></h2>
+    </div>
+
+
+    <div class="bgimg-3">
+      <div class="caption">
+        <p1>sepia(100%)</p1>
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Copyright &copy; 2021 by <a href="https://unsplash.com/photos/green-aurora-lights-during-night-time-JWHSIG1kM2c">Federico Di Dio photography</a></h2>
+    </div>
+
+  </body>
+</html>
