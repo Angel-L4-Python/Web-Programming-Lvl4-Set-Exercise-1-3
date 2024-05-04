@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Calculator</title>
+    <!-- stylesheet -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- part1 the title  -->
+<h2>Petrol Calculator</h2>
+
+<!-- part2 the calculator -->
+    <div class="calculator">
+        <!-- part3 the total cost to be shown on top-->
+        <!-- a "p" tag to display the total cost -->
+        <p id="total-cost">$0.00</p>
+
+            <!-- part4 the labels -->
+            <div class="label-container">
+                <div class="label">
+                    <!-- label1 for the "cost" of petrol per liter -->
+                    <label for="cost">Cost per liter:</label>
+                </div>
+                <div class="label">
+                    <!-- label2 for the number of "liters" perchased -->
+                    <label for="liters">Liters purchased:</label>
+                </div>
+
+                <!-- part5 the input fields -->
+                <div class="input-container">
+                    <!-- input1 for the user to enter the cost of petrol per liter with a value of "1.72" -->
+                    <!-- "step" to control the decimal places (two decimal places) for the input type "number"  -->
+                    <input type="number" id="cost" step="0.01" value="1.72" placeholder="Enter cost per liter">
+                    <!-- input2 for the user to enter the number of liters purchased with a value of "0" -->
+                    <input type="number" id="liters" step="0.01" value="0" placeholder="Enter num of liters">
+                </div>
+            </div>
+
+        <!-- part 6 the calculate button that calculates the total cost of the petrol purchased -->
+        <button id="calculate">Calculate Total Cost</button>
+    </div>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+</html>

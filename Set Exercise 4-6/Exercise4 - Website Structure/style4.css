@@ -1,0 +1,121 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1{
+    font-family: Tahoma;
+    font-size: 33px;
+}
+
+hr {
+    width: 265px;
+    height: 3px;
+    border: none;
+    background-color: white;
+    margin-top: -22px;
+}
+
+header{
+    padding-bottom: 10px;
+    width: auto;
+    overflow: hidden;
+    background-color: #17072b;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    }
+    
+nav a {
+    padding: 0px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    }
+
+
+
+main{
+    display: flex;
+    text-align: left;
+}
+
+section {
+    flex: 1;
+    padding: 0 40px;
+}
+
+article{
+    width: auto;
+}
+
+p{
+    font-size: 17.5px;
+    width: 700px;
+}
+
+.hr2{
+    width: 152px;
+    height: 3px;
+    border: none;
+    background-color: black;
+    margin-left: 0px;
+    margin-top: -30px;
+}
+
+.imgw{
+    margin-bottom: 5px;
+}
+
+
+
+
+aside {
+    margin: 10px 0;
+    width: 50%;
+    background-color: #172D67;
+    color: white;
+}
+
+.hr3{
+    width: 125px;
+    height: 3px;
+    border: none;
+    background-color: white;
+    margin-left: 0px;
+    margin-top: -35px;
+}
+
+li{
+    list-style: none;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+li:before { 
+    content: "- " ;
+}
+
+.imglu{
+    text-align: center;
+    margin-left: 5px;
+}
+.imglu img{
+    margin-right: 5px;
+}
+
+
+
+footer{
+    padding: 5px;
+    background-color: #8c15e9;
+    color: white;
+    text-align: center;
+}

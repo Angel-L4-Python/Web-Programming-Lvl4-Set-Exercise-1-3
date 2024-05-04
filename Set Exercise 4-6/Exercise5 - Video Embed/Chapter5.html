@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embed Video Loop</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 100%;
+            margin: 0;
+
+            background-image: url("bgimg.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        video {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <video width="540" height="720"  poster="videoposter.png" controls loop>
+        <source src="arlecchino.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
